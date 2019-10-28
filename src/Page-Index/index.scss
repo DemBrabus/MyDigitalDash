@@ -2,8 +2,13 @@
 //Index.scss
 //
 
+// BEM Block__Element--Modifier
+// Naming - camelCase
+
+
 // Imports --
     @import '../Styles/StyleGuide/Colors/ColorGuide.scss';
+    @import '../Styles/Menu/Menu.scss';
 
 
 * {
@@ -13,7 +18,7 @@
 }
 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
@@ -21,5 +26,6 @@ body {
     height: 100vh;
     position: relative;
     font-family: montserrat, sans-serif;
-    overflow-x: hidden;
+    font-style: normal;
+    overflow: hidden;
 }

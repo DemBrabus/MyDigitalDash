@@ -7,11 +7,167 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.typekit.net/uff1tfl.css">
+
     <title>My Digital Dash</title>
 </head>
 <body>
 
-    <h1>My Digital Dash</h1>
+    <!-- Main Menu -->
+    <div class="menu">
+        <div class="menu__inner">
+
+            <!-- Menu Title -->
+            <div class="menu__titleWrap">
+                <p class="menu__title">
+                    My Digital Dash
+                </p>
+            </div>
+
+            <!-- Menu Status -->
+            <div class="menu__statusWrap">
+                <p class="menu__status--text menu__status--caughtUp" id="menu-status-caughtUp">
+                    All Caught Up
+                </p>
+                <div class="menu__status--divider"></div>
+                <p class="menu__status--text menu__status--updateAll" id="menu-status-updateAll">
+                    Update All
+                </p>
+            </div>
+
+            <!-- Menu Tabs -->
+            <div class="menu__tabsWrap">
+                <ul class="menu__tabs">
+
+                    <li class="menu__tabs--listItem">
+                        <div class="menu__tab--active" id="menu-tab-active-dashboard"></div>
+                        <div class="menu__tab--content">
+                            <div class="menu__tab--cover" id="menu-tab-dashboard"></div>
+                            <div class="menu__tab--icon"></div>
+                            <p class="menu__tab--text">Dashboard</p>
+                            <div class="menu__tab-notification" id="menu-tab-notification-dashboard"></div>
+                        </div>
+                    </li>
+
+                    <li class="menu__tabs--listItem" >
+                        <div class="menu__tab--active" id="menu-tab-active-finances"></div>
+                        <div class="menu__tab--content">
+                            <div class="menu__tab--cover" id="menu-tab-finances"></div>
+                            <div class="menu__tab--icon"></div>
+                            <p class="menu__tab--text">Finances</p>
+                            <div class="menu__tab-notification" id="menu-tab-notification-finances"></div>
+                        </div>
+                    </li>
+
+                    <li class="menu__tabs--listItem">
+                        <div class="menu__tab--active" id="menu-tab-active-healthFitness"></div>
+                        <div class="menu__tab--content">
+                            <div class="menu__tab--cover" id="menu-tab-healthFitness"></div>
+                            <div class="menu__tab--icon"></div>
+                            <p class="menu__tab--text">Health & Fitness</p>
+                            <div class="menu__tab-notification" id="menu-tab-notification-healthFitness"></div>
+                        </div>
+                    </li>
+
+                    <li class="menu__tabs--listItem">
+                        <div class="menu__tab--active" id="menu-tab-active-goals"></div>
+                        <div class="menu__tab--content">
+                            <div class="menu__tab--cover" id="menu-tab-goals"></div>
+                            <div class="menu__tab--icon"></div>
+                            <p class="menu__tab--text">Goals</p>
+                            <div class="menu__tab-notification" id="menu-tab-notification-goals"></div>
+                        </div>
+                    </li>
+
+                    <li class="menu__tabs--listItem">
+                        <div class="menu__tab--active" id="menu-tab-active-calendar"></div>
+                        <div class="menu__tab--content">
+                            <div class="menu__tab--cover" id="menu-tab-calendar"></div>
+                            <div class="menu__tab--icon"></div>
+                            <p class="menu__tab--text">Calendar</p>
+                            <div class="menu__tab-notification" id="menu-tab-notification-calendar"></div>
+                        </div>
+                    </li>
+
+                    <li class="menu__tabs--listItem">
+                        <div class="menu__tab--active" id="menu-tab-active-accounts"></div>
+                        <div class="menu__tab--content">
+                            <div class="menu__tab--cover" id="menu-tab-accounts"></div>
+                            <div class="menu__tab--icon"></div>
+                            <p class="menu__tab--text">Accounts</p>
+                            <div class="menu__tab-notification" id="menu-tab-notification-accounts"></div>
+                        </div>
+                    </li>
+
+                    <li class="menu__tabs--listItem">
+                        <div class="menu__tab--active" id="menu-tab-active-notePad"></div>
+                        <div class="menu__tab--content">
+                            <div class="menu__tab--cover" id="menu-tab-notePad"></div>
+                            <div class="menu__tab--icon"></div>
+                            <p class="menu__tab--text">Note Pad</p>
+                            <div class="menu__tab-notification" id="menu-tab-notification-notePad"></div>
+                        </div>
+                    </li>
+
+                    <li class="menu__tabs--listItem">
+                        <div class="menu__tab--active" id="menu-tab-active-files"></div>
+                        <div class="menu__tab--content">
+                            <div class="menu__tab--cover" id="menu-tab-files"></div>
+                            <div class="menu__tab--icon"></div>
+                            <p class="menu__tab--text">Files</p>
+                            <div class="menu__tab-notification" id="menu-tab-notification-files"></div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Menu Footer -->
+            <div class="menu__footer">
+                <div class="menu__footerInner">
+
+                    <div class="menu__footerBorderTopWrap">
+                        <div class="menu__footerBorderTop"></div>
+                    </div>
+
+                    <ul class="menu__footerTabs">
+                        <li class="menu__tabs--listItem">
+                            <div class="menu__tab--active" id="menu-tab-active-settings"></div>
+                            <div class="menu__tab--content">
+                                <div class="menu__tab--cover" id="menu-tab-settings"></div>
+                                <div class="menu__tab--icon"></div>
+                                <p class="menu__tab--text">Settings</p>
+                                <div class="menu__tab-notification" id="menu-tab-notification-settings"></div>
+                            </div>
+                        </li>
+                        <li class="menu__tabs--listItem">
+                            <div class="menu__tab--active" id="menu-tab-active-upgrade"></div>
+                            <div class="menu__tab--content">
+                                <div class="menu__tab--cover" id="menu-tab-upgrade"></div>
+                                <div class="menu__tab--icon"></div>
+                                <p class="menu__tab--text">Upgrade</p>
+                                <div class="menu__tab-notification" id="menu-tab-notification-upgrade"></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="menu__footerCopyRight">
+                        <p class="menu__footerCopyRight--text">Dashboard V1</p>
+                        <p class="menu__footerCopyRight--text">&copy; copyright 2019</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Main View -->
+
+
 
 </body>
 </html>

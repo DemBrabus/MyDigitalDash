@@ -1,0 +1,162 @@
+//
+// Menu Style Sheet SCSS
+//
+
+// ---------
+
+// Imports
+    @import '../StyleGuide/Colors/ColorGuide.scss';
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 280px;
+    background-color: color(Menu-Black);
+}
+    .menu__inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+//Menu Title
+.menu__titleWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+    .menu__title {
+        font-size: 22px;
+        color: color(Menu-Title);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+
+
+//Menu Status
+.menu__statusWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+    .menu__status--text {
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+        .menu__status--caughtUp {
+            color: color(Menu-Green)
+        }
+        .menu__status--updateAll {
+            color: color(Notification-Red);
+        }
+    .menu__status--divider {
+        height: 16px;
+        width: 1px;
+        background-color: color(Menu-Hidden-Text);
+        margin: 0 10px;
+    }
+
+
+
+//Menu Tabs
+.menu__tabsWrap {
+    
+}
+    .menu__tabs {
+
+    }
+        .menu__tabs--listItem {
+            position: relative;
+        }
+            .menu__tab--active {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 3px;
+                height: 100%;
+                background-color: color(Notification-Red);
+                display: none;
+            }
+            .menu__tab--content {
+                position: relative;
+                margin-left: 40px;
+                display: flex;
+                align-items: center;
+                padding: 10px 0px;
+                cursor: pointer;
+            }
+                .menu__tab--cover {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+                .menu__tab--icon {
+                    width: 22px;
+                    height: 22px;
+                    background-color: color(Menu-Dark-Grey);
+                    margin-right: 20px;
+                }
+                .menu__tab--text {
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: color(Menu-Dark-Grey);
+                    margin-right: 15px;
+                }
+                .menu__tab-notification {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 100%;
+                    background-color: color(Notification-Red);
+                    display: none;
+                }
+
+
+//Menu Footer
+.menu__footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+    .menu__footerInner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+        .menu__footerBorderTopWrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+            .menu__footerBorderTop {
+                width: 75%;
+                height: 2px;
+                background-color: color(Menu-Hidden-Text);
+            }
+        .menu__footerTabs {
+            margin-bottom: 50px;
+        }
+        .menu__footerCopyRight {
+            margin-bottom: 35px;
+            display: flex;
+            justify-content: center;
+        }
+            .menu__footerCopyRight--text {
+                font-size: 10px;
+                text-transform: uppercase;
+                color: color(Menu-Hidden-Text);
+            }
+            .menu__footerCopyRight--text:first-child {
+                margin-right: 10px;
+            }
