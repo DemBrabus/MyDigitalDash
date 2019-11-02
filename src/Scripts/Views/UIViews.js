@@ -4,6 +4,7 @@
 
 import { DataViewCtrl } from "../Views/DataViews";
 import { StateMachine } from "../State/State";
+import { UserInfo } from "../Data/UserInfo.js/UserInfo";
 
 export const UIViewsCtrl = (function(){
 
@@ -12,11 +13,29 @@ export const UIViewsCtrl = (function(){
             const mainViews = DataViewCtrl.MainViews();
             const footerViews = DataViewCtrl.FooterViews();
             const viewsInner = document.getElementById('views-inner');
+            const User = UserInfo.accessUserInfo('Dmontoya');
+            const UserFirstName = User.name.split(' ')[0];
             let MHtml = '';
             mainViews.forEach(function(view){
                 MHtml += `
                     <div class="view__container" id="view-${view}">
                         <div class="view__container-inner" id="view-container-inner-${view}">
+
+                            <div class="view__header block-styles">
+                                <p class="header__title">${view}</p>
+                                <div class="header__user-info--container">
+                                    <div class="header__icon-container">
+                                        <div class="header__icon"></div>
+                                        <div class="header__icon-notification"></div>
+                                    </div>
+                                    <div class="header__icon-container">
+                                        <div class="header__icon"></div>
+                                        <div class="header__icon-notification"></div>
+                                    </div>
+                                    <p class="header__user-greeting">Hello, ${UserFirstName}</p>
+                                    <div class="header__user-image"></div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -27,6 +46,22 @@ export const UIViewsCtrl = (function(){
                 FHtml += `
                     <div class="view__container" id="view-${footerView}">
                         <div class="view__container-inner" id="view-container-inner-${footerView}">
+
+                            <div class="view__header block-styles">
+                                <p class="header__title">${footerView}</p>
+                                <div class="header__user-info--container">
+                                    <div class="header__icon-container">
+                                        <div class="header__icon"></div>
+                                        <div class="header__icon-notification"></div>
+                                    </div>
+                                    <div class="header__icon-container">
+                                        <div class="header__icon"></div>
+                                        <div class="header__icon-notification"></div>
+                                    </div>
+                                    <p class="header__user-greeting">Hello, ${UserFirstName}</p>
+                                    <div class="header__user-image"></div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
