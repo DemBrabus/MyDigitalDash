@@ -11,7 +11,7 @@ export const DataMenuCtrl = (function(){
             'health',
             'goals',
             'calendar',
-            'account',
+            'accounts',
             'notepad',
             'files'
         ],

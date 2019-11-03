@@ -11,7 +11,7 @@ export const DataViewCtrl = (function(){
             'health',
             'goals',
             'calendar',
-            'account',
+            'accounts',
             'notepad',
             'files'
         ],
